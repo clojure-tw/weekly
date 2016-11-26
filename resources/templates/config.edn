@@ -1,14 +1,14 @@
 {:site-title         "ClojureTW Weekly"
  :author             "Clojure Taiwan Community"
  :description        "Weekly information for Clojure Taiwan Community"
- :site-url           "https://clojure.tw/weekly"
+ :site-url           "https://clojure.tw/"
  :post-root          "posts"
  :page-root          "pages"
  :post-root-uri      "/"
  :page-root-uri      "/"
  :tag-root-uri       "tags"
  :author-root-uri    "authors"
- :blog-prefix        "/"
+ :blog-prefix        "weekly"
  :rss-name           "feed.xml"
  :rss-filters        []
  :recent-posts       3
