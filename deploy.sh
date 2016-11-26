@@ -15,7 +15,7 @@ rm -rf $OUT || exit 0;
 mkdir $OUT
 
 # Copy all prebuild files
-cp -R resources/public/* $OUT
+cp -R resources/public/weekly/* $OUT
 cp -f circle.yml $OUT
 
 # go to the out directory and create a *new* Git repo
