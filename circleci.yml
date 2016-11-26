@@ -1,0 +1,31 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+machine:
+  timezone: Asia/Taipei
+  java:
+    version: oraclejdk8
+
+dependencies:
+  pre:
+    - wget -O lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+    - chmod 755 lein
+    - ./lein -v
+    - ./lein deps
+  cache_directories:
+    - ~/.m2
+    - ~/.lein
+
+test:
+  override:
+    - ./lein run
+
+deployment:
+  publish:
+    branch: master
+    commands:
+      - ./lein run
+      - sed -i 's%https://${GH_TOKEN}@${GH_REF}%git@github.com:clojure-tw/weekly.git%g' deploy.sh
+      - ./deploy.sh
