@@ -29,7 +29,7 @@ lein run
 
 目前主要訊息來源是以下網址:
 
-* [The REPL](http://us7.campaign-archive.com/?u=fef380870c4a5633a21f55d8e&id=dd03c2907d)
+* [The REPL](https://therepl.net/)
 
 * [Clojure Mailing-List](https://groups.google.com/forum/#!forum/clojure)
 
