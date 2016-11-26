@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw" xml:lang="zh">
 <head>
     <meta charset="utf-8"/>
     <title>{{title}}{% block subtitle %}{% endblock %}</title>
@@ -28,9 +28,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li {% if home %} class="active" {% endif %}><a href="{{index-uri}}">Home</a></li>
+                <li {% if home %} class="active" {% endif %}><a href="{{index-uri}}">最新訊息</a></li>
                 <li
-                {% if archives %} class="active" {% endif %}><a href="{{archives-uri}}">Archives</a></li>
+                {% if archives %} class="active" {% endif %}><a href="{{archives-uri}}">歸檔</a></li>
                 {% for nav-page in navbar-pages %}
                 <li
                 {%ifequal page.uri nav-page.uri %} class="active" {% endifequal %}>
@@ -57,17 +57,20 @@
 
         <div class="col-md-3">
             <div id="sidebar">
-                <h3>Links</h3>
+                <h3>連結</h3>
                 <ul id="links">
-                    <li><a href="http://cryogenweb.org/docs/home.html">Cryogen Docs</a></li>
-                    <li><a href="http://carmenla.me/blog/archives">Carmen's Blog</a></li>
+                    <li><a href="https://clojure.tw">ClojureTW 網站</a></li>
+                    <li><a href="https://www.meetup.com/Clojure-tw/">ClojureTW Meetup</a></li>
+                    <!-- <li><a href="https://telegram.me/joinchat/BN4J_DyCLWiSfT0yGXHTbA">ClojureTW Telegram</a></li>
+                         <li><a href="https://twitter.com/clojuretw">ClojureTW Twitter</a></li>
+                         <li><a href="https://www.facebook.com/groups/clojure.taiwan">ClojureTW Facebook</a></li> -->
                     {% for page in sidebar-pages %}
-                    <li><a href="{{page.uri}}">{{page.title}}</a></li>
+                    <!-- <li><a href="{{page.uri}}">{{page.title}}</a></li> -->
                     {% endfor %}
                 </ul>
                 {% if latest-posts|not-empty %}
                 <div id="recent">
-                    <h3>Recent Posts</h3>
+                    <h3>最近文章</h3>
                     <ul>
                         {% for post in latest-posts %}
                         <li><a href="{{post.uri}}">{{post.title}}</a></li>
