@@ -31,6 +31,8 @@ lein run
 
 * [The REPL](https://therepl.net/)
 
+* [Clojure News](https://clojure.news)
+
 * [Clojure Mailing-List](https://groups.google.com/forum/#!forum/clojure)
 
 * [ClojureScript Mailing-List](https://groups.google.com/forum/#!forum/clojurescript)
