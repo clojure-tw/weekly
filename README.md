@@ -33,6 +33,8 @@ lein run
 
 * [Clojure News](https://clojure.news)
 
+* [Functional Geekery](https://www.functionalgeekery.com/)
+
 * [Clojure Mailing-List](https://groups.google.com/forum/#!forum/clojure)
 
 * [ClojureScript Mailing-List](https://groups.google.com/forum/#!forum/clojurescript)
