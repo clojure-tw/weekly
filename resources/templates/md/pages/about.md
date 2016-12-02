@@ -13,3 +13,4 @@ ClojureTW Weekly 是由 Clojure 台灣社群所主辦的社群訊息集合，用
 ### 發起者/參與者
 
 * [coldnew](https://github.com/coldnew)
+* [cataska](https://github.com/cataska)
