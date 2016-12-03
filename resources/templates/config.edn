@@ -15,7 +15,7 @@
  :post-date-format   "yyyy-MM-dd"
  :sass-src           nil
  :sass-dest          nil
- :theme              "blue"
+ :theme              "clojuretw"
  :resources          ["img"]
  :keep-files         [".git"]
  :disqus?            false
