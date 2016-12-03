@@ -1,23 +1,12 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
-
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Alegreya';
 }
-
-h1 { font-size: 1.8em; }
-h2 {
-    font-size: 1.25em;
-}
-h3 { font-size: 1.17em; }
-h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
 
 body {
     color: #333;
     background-color: #f2f2f2;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 18px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
 }
 
 .container {
@@ -41,7 +30,7 @@ body {
 
 .navbar-default .navbar-brand {
     color: #fff;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Alegreya';
 }
 
 .navbar-default .navbar-brand:hover {
@@ -168,8 +157,4 @@ pre, code, .hljs {
         float:left;
         text-align: left;
     }
-}
-
-ul li {
-    margin:0 0 10px 0;
 }

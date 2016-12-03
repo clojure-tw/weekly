@@ -13,3 +13,15 @@ ClojureTW Weekly 是由 Clojure 台灣社群所主辦的社群訊息集合，用
 ### 發起者/參與者
 
 * [coldnew](https://github.com/coldnew)
+* [cataska](https://github.com/cataska)
+
+
+### 資訊來源
+
+資訊主要來自於以下網站以及一些個人收集的 RSS feed。
+
+* [The REPL](http://us7.campaign-archive.com/?u=fef380870c4a5633a21f55d8e&id=dd03c2907d)
+* [Functional Geekery](https://www.functionalgeekery.com/episode-76-anthony-cipriano/)
+* [Clojurians](http://clojurians.net/)
+* [Clojure Mailing-List](https://groups.google.com/forum/#!forum/clojure)
+* [ClojureScript Mailing-List](https://groups.google.com/forum/#!forum/clojurescript)
