@@ -7,11 +7,15 @@ Weekly News for [Clojure Taiwan Community](https://clojure.tw)
 
 目前規劃是每週一次將一些新的 Clojure 相關訊息簡單整理後發布，若你有看到新的東西，歡迎開 ISSUE，每週會清空一次 ISSUE。
 
-## 產生新的文章
+## 編輯文章
 
-這個 Weekly News 是透過 [Cryogen](http://cryogenweb.org/) 產生的，若你要新增文章，可以在 *resources/templates/md/* 裡面增加新的 Markdown 檔案。
+每一週的草稿我們都存放在 [dev 分支](https://github.com/clojure-tw/weekly/tree/dev/resources/templates/md/posts)，你可以在 *resources/templates/md/* 看到新的一期文章，若你已經是 [clojure-tw](https://github.com/clojure-tw) 的成員，可以直接手動編輯文章。
 
-你可以使用以下命令在本地端動態瀏覽產生出來的樣子
+如果不是，請開 ISSUE 和我們聯繫 :)
+
+## 產生結果
+
+這個 Weekly News 是透過 [Cryogen](http://cryogenweb.org/) 產生的，你可以使用以下命令在本地端動態瀏覽產生出來的樣子
 
 ```sh
 lein ring server
@@ -34,6 +38,8 @@ lein run
 * [Clojure News](https://clojure.news)
 
 * [Functional Geekery](https://www.functionalgeekery.com/)
+
+* [Clojurians](http://clojurians.net/)
 
 * [Clojure Mailing-List](https://groups.google.com/forum/#!forum/clojure)
 
