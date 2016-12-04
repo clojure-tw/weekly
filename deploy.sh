@@ -14,13 +14,13 @@ rm -rf $OUT || exit 0;
 # create repo directory
 mkdir $OUT
 
-# Copy all prebuild files, if html-minifer exist, use it instead of cp
-if hash html-minifier; then
-    html-minifier --input-dir resources/public/weekly --output-dir $OUT --collapse-whitespace --file-ext html
-else
-    cp -R resources/public/weekly/* $OUT
-fi
+
+# Copy all prebuild files, if html-minifer exist, use it to minify html content
+cp -R resources/public/weekly/* $OUT
 cp -f circle.yml $OUT
+if hash html-minifier; then
+    html-minifier --input-dir $OUT --output-dir $OUT --collapse-whitespace --file-ext html
+fi
 
 # go to the out directory and create a *new* Git repo
 cd $OUT
