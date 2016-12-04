@@ -24,6 +24,7 @@ ClojureTW Weekly 是由 Clojure 台灣社群所主辦的社群訊息集合，用
 
 * [The REPL](http://us7.campaign-archive.com/?u=fef380870c4a5633a21f55d8e&id=dd03c2907d)
 * [Functional Geekery](https://www.functionalgeekery.com/episode-76-anthony-cipriano/)
-* [Clojurians](http://clojurians.net/)
+* [Qiita](http://qiita.com/tags/Clojure)
+* [Clojurians Slack](http://clojurians.net/)
 * [Clojure Mailing-List](https://groups.google.com/forum/#!forum/clojure)
 * [ClojureScript Mailing-List](https://groups.google.com/forum/#!forum/clojurescript)
