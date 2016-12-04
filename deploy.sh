@@ -14,7 +14,6 @@ rm -rf $OUT || exit 0;
 # create repo directory
 mkdir $OUT
 
-
 # Copy all prebuild files, if html-minifer exist, use it to minify html content
 cp -R resources/public/weekly/* $OUT
 cp -f circle.yml $OUT
