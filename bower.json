@@ -1,0 +1,19 @@
+{
+  "name": "clojuretw-weekly",
+  "version": "1.0.0",
+  "homepage": "https://github.com/clojure-tw/weekly",
+  "author": "Yen-Chin, Lee",
+  "keywords": [
+    "clojure",
+    "amp"
+  ],
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.0"
+  }
+}

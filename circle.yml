@@ -14,7 +14,7 @@ dependencies:
     - chmod 755 lein
     - ./lein -v
     - ./lein deps
-    - npm install -g html-minifier
+    - npm install
   cache_directories:
     - ~/.m2
     - ~/.lein

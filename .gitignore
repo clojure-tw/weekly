@@ -11,3 +11,6 @@ pom.xml.asc
 .lein-failures
 /resources/public/
 .gh-pages/
+/bower_components/
+/node_modules/
+/build/

@@ -1,0 +1,30 @@
+{
+  "name": "clojuretw-weekly",
+  "version": "1.0.0",
+  "description": "Weekly news for Clojure Taiwan Community",
+  "keywords": [
+    "clojure",
+    "amp"
+  ],
+  "author": "Yen-Chin, Lee",
+  "license": "CC0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-amphtml-validator": "^1.0.0",
+    "gulp-bower": "0.0.13",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-help": "^1.6.1",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-html-replace": "^1.6.1",
+    "gulp-ignore": "^2.0.2",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-remove-html": "^1.3.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-uncss": "^1.0.6",
+    "purifycss": "^1.1.9"
+  },
+  "dependencies": {
+    "bower": "^1.8.0"
+  }
+}

@@ -12,4 +12,5 @@
             :plugins [[lein-ring "0.9.7"]]
             :main cryogen.core
             :ring {:init cryogen.server/init
-                   :handler cryogen.server/handler})
+                   :handler cryogen.server/handler}
+            :aliases {"gulp" ["do" ["shell" "node_modules/.bin/gulp" "default"]]})
