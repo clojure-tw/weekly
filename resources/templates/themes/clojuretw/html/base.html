@@ -10,6 +10,21 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet">
 
+        {% if post.author %}
+          <meta name="author" content="{{post.author}}">
+        {% else %}
+          <meta name="author" content="{{author}}">
+        {% endif %}
+
+        <meta name="keywords" content="clojure,taiwan">
+
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="{{site-url}}{{uri}}">
+        <meta property="og:site_name" content="{{site-title}}">
+        {% if post.title %}
+           <meta property="og:title" content="{{post.title}}">
+        {% endif %}
+
         <!-- for `lein ring server` testing, these lines will be removed by circle-ci -->
         <!--<build:removeHtml>-->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
