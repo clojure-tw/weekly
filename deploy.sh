@@ -14,8 +14,11 @@ rm -rf $OUT || exit 0;
 # create repo directory
 mkdir $OUT
 
+# build with amp support by gulp
+./node_modules/gulp/bin/gulp.js
+
 # Copy all prebuild files, if html-minifer exist, use it to minify html content
-cp -R resources/public/weekly/* $OUT
+cp -R ./build/dist/* $OUT
 cp -f circle.yml $OUT
 if hash html-minifier; then
     html-minifier --input-dir $OUT --output-dir $OUT --collapse-whitespace --file-ext html
