@@ -19,6 +19,7 @@ mkdir $OUT
 
 # Copy all prebuild files, if html-minifer exist, use it to minify html content
 cp -R ./build/dist/* $OUT
+cp ./resources/public/weekly/*.xml $OUT
 cp -f circle.yml $OUT
 if hash html-minifier; then
     html-minifier --input-dir $OUT --output-dir $OUT --collapse-whitespace --file-ext html
