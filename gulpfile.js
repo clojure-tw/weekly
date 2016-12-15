@@ -28,7 +28,11 @@ const paths = {
   }
 };
 
-gulp.task('compile:css', function() {
+gulp.task('bower', function() {
+  return bower();
+});
+
+gulp.task('compile:css', ['bower'], function() {
   return gulp.src(['./bower_components/bootstrap/dist/css/bootstrap.min.css',
                    './resources/public/weekly/css/screen.css'])
     .pipe(concatCss('app.css'))
@@ -69,12 +73,7 @@ gulp.task('build:minify-html', ['build:remove-html'], function() {
     .pipe(gulp.dest(paths.dist.dir));
 });
 
-gulp.task('bower', function() {
-  return bower();
-});
-
 gulp.task('validate:amphtml', ['build:minify-html'], function() {
-//gulp.task('validate:amphtml', function() {
 return gulp.src(paths.dist.html)
   // Some page no need to support amp, just ignore it
     .pipe(gulpIgnore.exclude(['**/404.html']))
