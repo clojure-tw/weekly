@@ -73,6 +73,14 @@ gulp.task('build:minify-html', ['build:remove-html'], function() {
     .pipe(gulp.dest(paths.dist.dir));
 });
 
+gulp.task('build:fix-html-link', ['build:minify-html'], function () {
+  return gulp.src(paths.dist.html)
+  // make all link create new tab
+    .pipe(replace(/<a\s+href="http/g, '<a target="_blank" href="http'))
+    .pipe(gulp.dest(paths.dist.dir));
+});
+
+
 gulp.task('validate:amphtml', ['build:minify-html'], function() {
 return gulp.src(paths.dist.html)
   // Some page no need to support amp, just ignore it
@@ -93,6 +101,7 @@ gulp.task('build', 'build all resources', [
   'build:inline-css',
   'build:remove-html',
   'build:minify-html',
+  'build:fix-html-link',
   'validate:amphtml'
 ]);
 
