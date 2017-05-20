@@ -13,6 +13,10 @@ Weekly News for [Clojure Taiwan Community](https://clojure.tw)
 
 如果不是，請開 ISSUE 和我們聯繫 :)
 
+## 人工智慧或是工人智慧?
+
+目前每一週的文章都是採用**工人智慧**進行編輯，因為有些文章無法透過人工智慧去塞選好壞，當然未來我們也會多加入一些人工智慧的功能來協助我們建立新的週報。
+
 ## 產生結果
 
 這個 Weekly News 是透過 [Cryogen](http://cryogenweb.org/) 產生的，你可以使用以下命令在本地端動態瀏覽產生出來的樣子
@@ -44,6 +48,8 @@ lein run
 * [Clojure Mailing-List](https://groups.google.com/forum/#!forum/clojure)
 
 * [ClojureScript Mailing-List](https://groups.google.com/forum/#!forum/clojurescript)
+
+* [PurelyFunctional.tv Newsletter](https://purelyfunctional.tv/newsletter-archives/)
 
 ## License
 
