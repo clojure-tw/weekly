@@ -104,3 +104,39 @@ jobs:
         path: /tmp/circleci-artifacts
     - store_artifacts:
         path: /tmp/circleci-test-results
+
+  deploy:
+    working_directory: ~/clojure-tw/weekly
+    docker:
+      - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "project.clj" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+      - run:
+          command: sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0/bin/java; sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0/bin/javac; echo -e "export JAVA_HOME=/usr/lib/jvm/jdk1.8.0" >> $BASH_ENV
+      # This is based on your 1.0 configuration file or project settings
+      - run: sudo apt-get install curl && curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && sudo apt-get install -y nodejs
+      - run: wget -O lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+      - run: chmod 755 lein
+      - run: ./lein -v
+      - run: ./lein deps
+      - run: npm install
+      - run: ./lein run
+      - run: sed -i 's%https://${GH_TOKEN}@${GH_REF}%git@github.com:clojure-tw/weekly.git%g' deploy.sh
+      - run: ./deploy.sh
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - build
+      - deploy:
+          filters:
+            branches:
+              only: master
+          requires:
+            - build
