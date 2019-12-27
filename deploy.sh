@@ -21,7 +21,6 @@ mkdir $OUT
 cp -R ./build/dist/* $OUT
 cp ./resources/public/weekly/*.xml $OUT
 cp ./resources/assets/google9d6ebc58aae14a99.html $OUT
-cp -f circle.yml $OUT
 if hash html-minifier; then
     html-minifier --input-dir $OUT --output-dir $OUT --collapse-whitespace --file-ext html
 fi
